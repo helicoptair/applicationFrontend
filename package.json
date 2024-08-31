@@ -1,6 +1,10 @@
 {
   "name": "housekey",
   "version": "4.7.0",
+  "engines": {
+      "node": "20.11.1",
+      "npm": "10.2.4"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
