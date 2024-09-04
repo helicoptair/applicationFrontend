@@ -6,7 +6,7 @@ import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 })
 export class DomHandlerService {
 
-  private isBrowser: boolean;
+  public isBrowser: boolean;
 
   constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) { 
     this.isBrowser = isPlatformBrowser(platformId); 
@@ -17,12 +17,15 @@ export class DomHandlerService {
   }
 
   get window(): Window | undefined {
-    // Verifica se estamos no ambiente de browser
-    return this.isBrowser && typeof window !== 'undefined' ? window : undefined;
+    return this.isBrowser ? window : undefined;
+  }
+
+  // Getter público para isBrowser
+  get isBrowserPlatform(): boolean {
+    return this.isBrowser;
   }
 
   winScroll(y: number, x: number): void {
-    // Verifica se estamos no ambiente de browser e se `window` está disponível
     const win = this.window;
     if (win) { 
       setTimeout(() => {
@@ -37,8 +40,7 @@ export class DomHandlerService {
 
   hidePreloader(): void {
     const winDoc = this.winDocument;
-    // Verifica se estamos no ambiente de browser e se `window` e `document` estão disponíveis
-    if (this.isBrowser && typeof window !== 'undefined' && winDoc) {
+    if (this.isBrowser && winDoc) {
       setTimeout(() => {
         const preloader = winDoc.getElementById('preloader');
         if (preloader) {
