@@ -6,26 +6,27 @@ import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 })
 export class DomHandlerService {
 
-  isBrowser: any; 
+  private isBrowser: boolean;
 
   constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) { 
     this.isBrowser = isPlatformBrowser(platformId); 
   }
 
-  get winDocument() {
+  get winDocument(): Document {
     return this.document;
   }
 
-  get window(): any {
-    if (this.isBrowser) { 
-      return window;
-    } 
+  get window(): Window | undefined {
+    // Verifica se estamos no ambiente de browser
+    return this.isBrowser && typeof window !== 'undefined' ? window : undefined;
   }
 
-  winScroll(y: number, x: number) {
-    if (this.isBrowser) { 
+  winScroll(y: number, x: number): void {
+    // Verifica se estamos no ambiente de browser e se `window` está disponível
+    const win = this.window;
+    if (win) { 
       setTimeout(() => {
-        window.scroll({
+        win.scroll({
           top: y,
           left: x,
           behavior: "smooth",
@@ -34,12 +35,16 @@ export class DomHandlerService {
     } 
   }
 
-  hidePreloader() {
-    if (this.isBrowser) {
+  hidePreloader(): void {
+    const winDoc = this.winDocument;
+    // Verifica se estamos no ambiente de browser e se `window` e `document` estão disponíveis
+    if (this.isBrowser && typeof window !== 'undefined' && winDoc) {
       setTimeout(() => {
-        this.winDocument.getElementById('preloader')?.classList.add('hide');
-      })   
+        const preloader = winDoc.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('hide');
+        }
+      });
     }
   }
-
 }
