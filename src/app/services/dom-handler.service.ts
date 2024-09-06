@@ -6,26 +6,30 @@ import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 })
 export class DomHandlerService {
 
-  isBrowser: any; 
+  public isBrowser: boolean;
 
   constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) { 
     this.isBrowser = isPlatformBrowser(platformId); 
   }
 
-  get winDocument() {
+  get winDocument(): Document {
     return this.document;
   }
 
-  get window(): any {
-    if (this.isBrowser) { 
-      return window;
-    } 
+  get window(): Window | undefined {
+    return this.isBrowser ? window : undefined;
   }
 
-  winScroll(y: number, x: number) {
-    if (this.isBrowser) { 
+  // Getter público para isBrowser
+  get isBrowserPlatform(): boolean {
+    return this.isBrowser;
+  }
+
+  winScroll(y: number, x: number): void {
+    const win = this.window;
+    if (win) { 
       setTimeout(() => {
-        window.scroll({
+        win.scroll({
           top: y,
           left: x,
           behavior: "smooth",
@@ -34,12 +38,15 @@ export class DomHandlerService {
     } 
   }
 
-  hidePreloader() {
-    if (this.isBrowser) {
+  hidePreloader(): void {
+    const winDoc = this.winDocument;
+    if (this.isBrowser && winDoc) {
       setTimeout(() => {
-        this.winDocument.getElementById('preloader')?.classList.add('hide');
-      })   
+        const preloader = winDoc.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('hide');
+        }
+      });
     }
   }
-
 }

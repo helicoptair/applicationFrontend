@@ -120,6 +120,12 @@ export class VooComponent implements OnInit {
   }
 
   ngOnInit() {
+    const currentUrl = this.router.url;
+
+    if (currentUrl.includes('checkout.stripe.com')) {
+      // Lógica para corrigir a URL ou redirecionar para uma rota válida
+      this.router.navigate(['/']);
+    }
     console.log("MOMENT MIN: " + this.minDate);
     console.log("MOMENT MAX: " + this.maxDate);
     this.sub = this.activatedRoute.params.subscribe(params => {
