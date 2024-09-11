@@ -56,7 +56,7 @@
                       </button>
                       <mat-menu #menu="matMenu">
                           @if(reservas.pode_cancelar_ou_remarcar == true){
-                            <button mat-menu-item>
+                            <button mat-menu-item (click)="exportToPdf(reservas.id)">
                               <mat-icon>confirmation_number</mat-icon>
                               <span>Imprimir ticket</span>
                             </button>

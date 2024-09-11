@@ -105,4 +105,21 @@ export class MinhasReservasComponent implements OnInit {
       });
   }
 
+  exportToPdf(reservaId: string) {
+    this.voosService.exportToPdf(reservaId).subscribe(response => {
+        console.log(response);
+
+        const blob = new Blob([response], { type: 'application/pdf' });
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Helicoptair - Ticket.pdf';
+        link.click();
+        window.URL.revokeObjectURL(url);
+
+    }, error => {
+        console.log(error);
+    });
+  } 
+
 }

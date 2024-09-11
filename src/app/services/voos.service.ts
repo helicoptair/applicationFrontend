@@ -78,4 +78,11 @@ export class VoosService extends BaseService {
     console.error('Ocorreu um erro:', error);
     return throwError(() => new Error(error.message || 'Erro no servidor'));
   }
+
+  exportToPdf(reservaId: string) {
+    return this.http
+        .get(this.urlServiceV1 + 'reservas/ticket-pdf/' + reservaId, { responseType: 'blob' })
+        .pipe(
+          catchError(super.serviceError));
+  } 
 }
