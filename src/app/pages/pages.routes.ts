@@ -39,6 +39,10 @@ export const routes: Routes = [
                 loadComponent: () => import('./register/register.component').then(c => c.RegisterComponent)
             },
             {
+                path: 'email-confirmation',
+                loadChildren: () => import('./emailConfirmation/emailConfirmation.routes').then(p => p.routes)
+            },
+            {
                 path: 'pricing',
                 loadComponent: () => import('./pricing/pricing.component').then(c => c.PricingComponent)
             },
