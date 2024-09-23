@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AuthService } from '@services/auth.service';
-import { ConfirmEmail } from './ConfirmEmail';
+import { ConfirmEmail } from '../ConfirmEmail';
+import { Router } from 'express';
 
 @Component({
-  selector: 'app-email-confirmation',
+  selector: 'app-confirmation',
   standalone: true,
-  templateUrl: './emailConfirmation.component.html'
+  templateUrl: './confirmation.component.html'
 })
-export class EmailConfirmationComponent implements OnInit {
+export class ConfirmationComponent implements OnInit {
   
   errors: any[] = [];
   user!: ConfirmEmail;
@@ -18,9 +19,13 @@ export class EmailConfirmationComponent implements OnInit {
   
   constructor(
     private authService: AuthService, 
+    private route: ActivatedRoute,
     private activatedRoute: ActivatedRoute) { 
-      this.username = activatedRoute.snapshot.url[1].path; 
-      this.token = activatedRoute.snapshot.url[2].path; 
+      // this.username = activatedRoute.snapshot.url[1].path; 
+      // this.token = activatedRoute.snapshot.url[2].path; 
+
+      this.username = this.route.snapshot.paramMap.get('username');
+      this.token = this.route.snapshot.paramMap.get('token');
     }
     
     ngOnInit() {
