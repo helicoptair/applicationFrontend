@@ -1,4 +1,6 @@
 {   
+  "FAZER_LOGIN_PRA_RESERVAR": "Войдите, чтобы забронировать", 
+  "RESERVAR_PELO_ZAP": "Забронируйте через WhatsApp", 
   "LOGIN": "Войти", 
   "LOGOUT": "Выйти", 
   "REGISTER": "Регистрация",

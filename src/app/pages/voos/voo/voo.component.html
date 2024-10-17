@@ -88,10 +88,10 @@
                                 </div>
                             }@else{
                                 <div class="text-center">
-                                    <button mat-raised-button [ngStyle]="{'background-color':'#3EA201'}" style="color: white;" [routerLink]="['/login']">Fazer login para reservar</button>
+                                    <button mat-raised-button [ngStyle]="{'background-color':'#3EA201'}" style="color: white;" [routerLink]="['/login']">{{ 'FAZER_LOGIN_PRA_RESERVAR' | translate }}</button>
                                 </div>
                                 <div class="text-center" style="margin-top: 20px;">
-                                    <a mat-flat-button href="https://api.whatsapp.com/send?phone=5521995585986" [ngStyle]="{'background-color':'#3EA201', 'color':'white'}" target="_blank" class="mx-3 uppercase">Reservar pelo WhatsApp</a>
+                                    <a mat-flat-button href="https://api.whatsapp.com/send?phone=5521995585986" [ngStyle]="{'background-color':'#3EA201', 'color':'white'}" target="_blank" class="mx-3 uppercase">{{ 'RESERVAR_PELO_ZAP' | translate }}</a>
                                 </div>
                             }
                         </div>

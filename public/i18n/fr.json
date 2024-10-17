@@ -1,4 +1,6 @@
 {   
+  "FAZER_LOGIN_PRA_RESERVAR": "Connectez-vous pour réserver", 
+  "RESERVAR_PELO_ZAP": "Réservez via WhatsApp", 
   "LOCAL": "Aéroport de Jacarepaguá - RJ", 
   "LOGIN": "S'identifier", 
   "LOGOUT": "Se déconnecter",

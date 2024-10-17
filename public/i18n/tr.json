@@ -1,4 +1,6 @@
 {   
+  "FAZER_LOGIN_PRA_RESERVAR": "Rezervasyon yapmak için giriş yapın", 
+  "RESERVAR_PELO_ZAP": "WhatsApp aracılığıyla rezervasyon yapın", 
   "LOGIN": "Oturum aç", 
   "LOGOUT": "Çıkış", 
   "REGISTER": "Kayıt ol",

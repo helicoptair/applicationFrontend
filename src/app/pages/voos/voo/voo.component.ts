@@ -36,6 +36,7 @@ import {provideNativeDateAdapter} from '@angular/material/core';
 import { CreateSession } from '@models/create_session';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import moment from 'moment';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-voo',
@@ -46,6 +47,7 @@ import moment from 'moment';
     SwiperModule,
     MatSidenavModule,
     PipesModule,
+    TranslateModule,
     MatIconModule,
     MatProgressSpinnerModule,
     NgScrollbarModule,
