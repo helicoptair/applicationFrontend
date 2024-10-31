@@ -60,12 +60,10 @@
                         
                         <!-- RESERVAR -->
                         <div class="widget">
-                            <h3 class="widget-title" [ngStyle]="{'background-color':'#3EA201'}" style="color: white;">Realizar reserva</h3>
-                            <p style="text-align: justify;">Para realizar a reserva você precisará apenas realizar um pagamento de R$ 300 que será deduzido do valor final. No dia do voo, o restante poderá
-                                ser pago em dinheiro, pix ou cartão.
-                            </p>
-                            <p style="font-size: 12px; text-align: justify;">*não aceitaremos links de pagamento para o valor restante, é de responsabilidade do passageiro levar os meios apropriados para pagamento.</p>
-                            <p style="font-size: 12px; text-align: justify;">**após o pagamento, nossa equipe entrará em contato por whatsApp ou e-mail para confirmar o horário desejado.</p>
+                            <h3 class="widget-title" [ngStyle]="{'background-color':'#3EA201'}" style="color: white;">{{ 'REALIZAR_RESERVA_VOO' | translate }}</h3>
+                            <p style="text-align: justify;">{{ 'WIDGET_VOO_1' | translate }}</p>
+                            <p style="font-size: 12px; text-align: justify;">{{ 'WIDGET_VOO_2' | translate }}</p>
+                            <p style="font-size: 12px; text-align: justify;">{{ 'WIDGET_VOO_3' | translate }}</p>
                             @if(userLogado){
                                 <div class="text-center">
 
@@ -98,9 +96,9 @@
 
                         <!-- ENVIE SUA DUVIDA -->
                         <div class="widget">
-                            <h3 class="widget-title bg-primary">Envia sua dúvida</h3>
+                            <h3 class="widget-title bg-primary">{{ 'WIDGET_ENVIE_DUVIDA' | translate }}</h3>
                             <form [formGroup]="contactForm" (ngSubmit)="onContactFormSubmit(contactForm.value)">
-                                <p>Interessado nesse voo mas continua com dúvida? Envie seu questionamento que nossa equipe entrará em contato.</p>
+                                <p>{{ 'WIDGET_ENVIE_DUVIDA_TEXTO' | translate }}</p>
                                 <mat-form-field appearance="outline" class="w-100">
                                     <mat-label>Nome</mat-label>
                                     <input matInput placeholder="Nome" autocomplete="off" formControlName="name">
@@ -189,17 +187,17 @@
                     <div fxLayout="column" fxLayoutAlign.xs="center center" class="mx-3">
                         @if (settings.currency == 'USD') {
                             <h2 class="primary-color price">
-                                <span>a partir de {{voo.preco_pix_pessoa | currency : 'USD' : 'symbol' : '1.0'}}</span>                        
+                                <span>{{ 'VOO_PRECO_PARTIR_DE' | translate }} {{voo.preco_pix_pessoa | currency : 'USD' : 'symbol' : '1.0'}}</span>                        
                             </h2>
                         }
                         @if (settings.currency == 'EUR') {
                             <h2 class="primary-color price">
-                                <span>a partir de {{voo.preco_pix_pessoa | currency : 'EUR' : 'symbol' : '1.0'}}</span>                       
+                                <span>{{ 'VOO_PRECO_PARTIR_DE' | translate }} {{voo.preco_pix_pessoa | currency : 'EUR' : 'symbol' : '1.0'}}</span>                       
                             </h2>
                         }  
                         @if (settings.currency == 'BRL') {
                             <h2 class="primary-color price">
-                                <span>a partir de {{voo.preco_pix_pessoa | currency : 'BRL' : 'symbol' : '1.0'}}</span>                        
+                                <span>{{ 'VOO_PRECO_PARTIR_DE' | translate }} {{voo.preco_pix_pessoa | currency : 'BRL' : 'symbol' : '1.0'}}</span>                        
                             </h2>
                         } 
                         <!-- <app-rating [ratingsCount]="property?.ratingsCount" [ratingsValue]="property?.ratingsValue"></app-rating>  -->
@@ -273,15 +271,15 @@
 
                     <mat-card class="p-3 mt-3">
                         <mat-card-header class="pt-0 pb-2" fxLayoutAlign="center center"> 
-                            <mat-card-title class="uppercase">Detalhes</mat-card-title> 
+                            <mat-card-title class="uppercase">{{ 'DETALHES_VOO_TITULO' | translate }}</mat-card-title> 
                         </mat-card-header>
                         <div fxLayout="row wrap" class="details pt-2 pb-2">
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Categoria:</span>
+                                <span>{{ 'DETALHES_VOO_CATEGORIA' | translate }}</span>
                                 <span>{{voo.categoria_de_voo | categoriaVoo}}</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Tipo do Voo:</span>
+                                <span>{{ 'DETALHES_VOO_TIPO_VOO' | translate }}</span>
                                 <span>{{voo.status}}</span>
                                 <!-- <span [class.list-item]="voo.propertyStatus.length > 1" [class.last]="last">{{status}}</span>
                                 <div fxLayout="row wrap" class="list">
@@ -290,17 +288,17 @@
                                 </div> -->
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Exclusividade:</span>
+                                <span>{{ 'DETALHES_VOO_EXCLUSIVIDADE' | translate }}</span>
                                 @if(voo.status != 'Compartilhado'){
                                     <span>Sim</span>
                                 }@else{<span>Não</span>}
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Passageiros:</span>
+                                <span>{{ 'DETALHES_VOO_PASSAGEIROS' | translate }}</span>
                                 <span>{{voo.quantidade_pax}}</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Fotografia:</span>
+                                <span>{{ 'DETALHES_VOO_FOTOGRAFIA' | translate }}</span>
                                 @if(voo.status == 'Foto e Vídeo'){
                                     <span>Sim</span>
                                 }
@@ -310,7 +308,7 @@
                                 @else{<span>Não</span>}
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Filmagem:</span>
+                                <span>{{ 'DETALHES_VOO_FILMAGEM' | translate }}</span>
                                 @if(voo.status == 'Foto e Vídeo'){
                                     <span>Sim</span>
                                 }
@@ -320,11 +318,11 @@
                                 @else{<span>Não</span>}
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Tempo de voo:</span>
+                                <span>{{ 'DETALHES_VOO_TEMPO' | translate }}</span>
                                 <span>{{voo.tempo_de_voo_minutos}} min</span>
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Limite de peso:</span>
+                                <span>{{ 'DETALHES_VOO_LIMITE_PESO' | translate }}</span>
                                 <span>120kg por assento</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
@@ -332,31 +330,31 @@
                                 <span>30min antes da decolagem</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Valor da reserva:</span>
+                                <span>{{ 'DETALHES_VOO_RESERVA' | translate }}</span>
                                 <span>R$ 300</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Remarcação:</span>
+                                <span>{{ 'DETALHES_VOO_REMARCACAO' | translate }}</span>
                                 <span>Mínimo de 24h da decolagem</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Cancelamento:</span>
+                                <span>{{ 'DETALHES_VOO_CANCELAMENTO' | translate }}</span>
                                 <span>Mínimo de 24h da decolagem</span>
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Preço pessoa:</span>
+                                <span>{{ 'DETALHES_VOO_PRECO_PESSOA' | translate }}</span>
                                 <span>R$ {{voo.preco_pix_pessoa}} em PIX ou dinheiro</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Preço pessoa:</span>
+                                <span>{{ 'DETALHES_VOO_PRECO_PESSOA' | translate }}</span>
                                 <span>R$ {{voo.preco_cartao_pessoa}} em cartão</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Preço total:</span>
+                                <span>{{ 'DETALHES_VOO_PRECO_TOTAL' | translate }}</span>
                                 <span>R$ {{voo.preco_pix_total}} em PIX ou dinheiro</span>
                             </div> 
                             <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
-                                <span>Preço total:</span>
+                                <span>{{ 'DETALHES_VOO_PRECO_TOTAL' | translate }}</span>
                                 <span>R$ {{voo.preco_cartao_total}} em cartão</span>
                             </div> 
                         </div>  
@@ -366,7 +364,7 @@
                 <!-- PONTOS SOBREVOADOS -->
                 <mat-card class="p-3 mt-3"> 
                     <mat-card-header class="pt-0" fxLayoutAlign="center center"> 
-                        <mat-card-title class="uppercase">Pontos sobrevoados</mat-card-title> 
+                        <mat-card-title class="uppercase">{{ 'PONTOS_SOBREVOADOS_TITULO' | translate }}</mat-card-title> 
                     </mat-card-header>
                     <mat-card-content class="p-0 pt-4 pb-2">
                         <div fxLayout="row wrap">
@@ -520,42 +518,42 @@
                     </mat-card-content>
 
                     <mat-card-content class="p-0 pt-4">
-                        <p style="font-size: 12px; margin-bottom: 0;">*todos os pontos dependem de condição climática favorável e autorização dos órgãos de controle.</p>
-                        <p style="font-size: 12px; margin-bottom: 0;">**determinados pontos, como o Pão de Açúcar, precisam de uma distância de segurança.</p>
-                        <p style="font-size: 12px;">***não há devolução de dinheiro ou desconto em caso de um ponto do roteiro estar sem visibilidade.</p>
+                        <p style="font-size: 12px; margin-bottom: 0;">{{ 'ROTEIRO_OBS_1' | translate }}</p>
+                        <p style="font-size: 12px; margin-bottom: 0;">{{ 'ROTEIRO_OBS_2' | translate }}</p>
+                        <p style="font-size: 12px;">{{ 'ROTEIRO_OBS_3' | translate }}</p>
                     </mat-card-content>
                 </mat-card>
 
                 <!-- SERVIÇOS ADICIONAIS -->
                 <mat-card class="p-3 mt-3"> 
                     <mat-card-header class="pt-0" fxLayoutAlign="center center"> 
-                        <mat-card-title class="uppercase">Serviços Adicionais</mat-card-title> 
+                        <mat-card-title class="uppercase">{{ 'SERVICOS_ADICIONAIS_VOO_TITULO' | translate }}</mat-card-title> 
                     </mat-card-header>
                     <mat-card-content class="p-0 pt-3 pb-2">
                         <div fxLayout="row wrap">
                             <div fxFlex="100" fxFlex.gt-xs="33.3">
                                 <mat-icon class="mat-icon-sm">airport_shuttle</mat-icon>
-                                <span class="mx-2">Zona Sul x Aeroporto: R$ 250</span>
+                                <span class="mx-2">{{ 'SERVICOS_ADICIONAIS_ZONASUL_AEROPORTO' | translate }}</span>
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="33.3">
                                 <mat-icon class="mat-icon-sm">airport_shuttle</mat-icon>
-                                <span class="mx-2">Centro x Aeroporto: R$ 250</span>
+                                <span class="mx-2">{{ 'SERVICOS_ADICIONAIS_CENTRO_AEROPORTO' | translate }}</span>
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="33.3">
                                 <mat-icon class="mat-icon-sm">airport_shuttle</mat-icon>
-                                <span class="mx-2">Barra/Recreio x Aeroporto: R$ 150</span>
+                                <span class="mx-2">{{ 'SERVICOS_ADICIONAIS_BARRARECREIO_AEROPORTO' | translate }}</span>
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="33.3"> 
                                 <mat-icon class="mat-icon-sm">local_florist</mat-icon>
-                                <span class="mx-2">Buquê: R$ 200</span>
+                                <span class="mx-2">{{ 'SERVICOS_ADICIONAIS_BUQUE' | translate }}</span>
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="33.3">
                                 <mat-icon class="mat-icon-sm">local_bar</mat-icon>
-                                <span class="mx-2">Chandon Baby: R$ 100</span>
+                                <span class="mx-2">Chandon 187ml: R$ 100</span>
                             </div>
                             <div fxFlex="100" fxFlex.gt-xs="33.3">
                                 <mat-icon class="mat-icon-sm">liquor</mat-icon>
-                                <span class="mx-2">Chandon Grande: R$ 190</span>
+                                <span class="mx-2">Chandon 750ml: R$ 190</span>
                             </div>
                         </div>
                     </mat-card-content>
@@ -564,19 +562,19 @@
                 <!-- DESCRIÇÃO -->
                 <mat-card class="p-3 mt-3"> 
                     <mat-card-header class="pt-0" fxLayoutAlign="center center"> 
-                        <mat-card-title class="uppercase">Descrição</mat-card-title> 
+                        <mat-card-title class="uppercase">{{ 'DESCRICAO_VOO_TITULO' | translate }}</mat-card-title> 
                     </mat-card-header>
                     <mat-card-content class="p-4 pt-2">
-                        <p style="text-align: justify;">Venha realizar o passeio mais incrível da sua vida, sobrevoando os pontos mais procurados do Rio de Janeiro e confira porque é conhecida como Cidade Maravilhosa.</p>
-                        <p style="text-align: justify;">Nesse passeio você irá desfrutar de aeronave climatizada, com total conforto e comunicação interna. O piloto também irá ajudar a informar os locais sobrevoados para quem não conhece.</p>
-                        <p style="text-align: justify;">Para a Helicoptair, a qualidade vem sempre em primeiro lugar e, por isso, você pode confiar que terá um serviço de excelência. Nesse voo panorâmico no Rio de Janeiro você conta também com uma equipe totalmente capaz de prestar um serviço inesquecível para você e sua família.</p>
+                        <p style="text-align: justify;">{{ 'DESCRICAO_PARTE_1' | translate }}</p>
+                        <p style="text-align: justify;">{{ 'DESCRICAO_PARTE_2' | translate }}</p>
+                        <p style="text-align: justify;">{{ 'DESCRICAO_PARTE_3' | translate }}</p>
                     </mat-card-content>
                 </mat-card> 
 
                 <!-- LOCALIZAÇÃO -->
                 <mat-card class="p-3 mt-3 mb-5"> 
                     <mat-card-header class="pt-0" fxLayoutAlign="center center"> 
-                        <mat-card-title class="uppercase">Localização</mat-card-title> 
+                        <mat-card-title class="uppercase">{{ 'LOCALIZACAO_VOO_TITULO' | translate }}</mat-card-title> 
                     </mat-card-header>
                     <mat-card-content class="p-4 pt-2 pb-2"> 
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.918089797495!2d-43.37238422393083!3d-22.990039340853045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdbaaf18b22e9%3A0xc0afcc5bf9494536!2sHelicoptair!5e0!3m2!1spt-BR!2sbr!4v1723296200717!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
