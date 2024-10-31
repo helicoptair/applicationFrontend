@@ -1,4 +1,5 @@
 {   
+  "WIDGET_BOTAO_ENVIAR": "Zum Versenden",
   "VOO_PRECO_PARTIR_DE": "ab",
   "WIDGET_ENVIE_DUVIDA_TEXTO": "Sie interessieren sich für diesen Flug, haben aber noch Fragen? Senden Sie Ihre Frage und unser Team wird sich mit Ihnen in Verbindung setzen.",
   "WIDGET_ENVIE_DUVIDA": "Senden Sie Ihre Frage",
@@ -7,7 +8,7 @@
   "WIDGET_VOO_2": "*wir akzeptieren keine Zahlungslinks für den Restbetrag. Es liegt in der Verantwortung des Passagiers, die entsprechenden Zahlungsmethoden mitzubringen.", 
   "WIDGET_VOO_3": "**nach der Zahlung wird sich unser Team per WhatsApp oder E-Mail mit Ihnen in Verbindung setzen, um den gewünschten Zeitpunkt zu bestätigen.",
   "DETALHES_VOO_TIPO_VOO": "Flugtyp:",
-  "DETALHES_VOO_PRECO_PTOTAL": "Gesamtpreis:", 
+  "DETALHES_VOO_PRECO_TOTAL": "Gesamtpreis:", 
   "DETALHES_VOO_PRECO_PESSOA": "Personenpreis:",
   "DETALHES_VOO_CANCELAMENTO": "Stornierung:",
   "DETALHES_VOO_REMARCACAO": "Umplanung:",

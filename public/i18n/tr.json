@@ -1,4 +1,5 @@
 {   
+  "WIDGET_BOTAO_ENVIAR": "Göndermek",
   "VOO_PRECO_PARTIR_DE": "from",
   "WIDGET_ENVIE_DUVIDA_TEXTO": "Bu uçuşla ilgileniyor ancak hâlâ sorularınız mı var? Sorunuzu gönderin, ekibimiz sizinle iletişime geçecektir.",
   "WIDGET_ENVIE_DUVIDA": "Sorunuzu gönderin",
@@ -7,7 +8,7 @@
   "WIDGET_VOO_2": "*geriye kalan tutar için ödeme bağlantılarını kabul etmeyeceğiz, uygun ödeme yöntemlerini getirmek yolcunun sorumluluğundadır.", 
   "WIDGET_VOO_3": "**ödeme sonrasında ekibimiz istediğiniz zamanı onaylamak için sizinle WhatsApp veya e-posta yoluyla iletişime geçecektir.",
   "DETALHES_VOO_TIPO_VOO": "Uçuş türü:",
-  "DETALHES_VOO_PRECO_PTOTAL": "Toplam fiyat:", 
+  "DETALHES_VOO_PRECO_TOTAL": "Toplam fiyat:", 
   "DETALHES_VOO_PRECO_PESSOA": "Kişi fiyatı:",
   "DETALHES_VOO_CANCELAMENTO": "İptal:",
   "DETALHES_VOO_REMARCACAO": "Yeniden planlama:",

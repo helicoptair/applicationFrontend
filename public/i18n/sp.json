@@ -1,4 +1,5 @@
 {   
+  "WIDGET_BOTAO_ENVIAR": "Enviar",
   "VOO_PRECO_PARTIR_DE": "desde",
   "WIDGET_ENVIE_DUVIDA_TEXTO": "¿Interesado en este vuelo pero aún tienes preguntas? Envía tu pregunta y nuestro equipo se pondrá en contacto.",
   "WIDGET_ENVIE_DUVIDA": "Envía tu pregunta",
@@ -7,7 +8,7 @@
   "WIDGET_VOO_2": "*no aceptaremos enlaces de pago por el monto restante, es responsabilidad del pasajero traer los métodos de pago adecuados.", 
   "WIDGET_VOO_3": "**después del pago, nuestro equipo se comunicará con usted vía WhatsApp o correo electrónico para confirmar el horario deseado.",
   "DETALHES_VOO_TIPO_VOO": "Tipo de vuelo:",
-  "DETALHES_VOO_PRECO_PTOTAL": "Precio total:", 
+  "DETALHES_VOO_PRECO_TOTAL": "Precio total:", 
   "DETALHES_VOO_PRECO_PESSOA": "Precio persona:",
   "DETALHES_VOO_CANCELAMENTO": "Cancelación:",
   "DETALHES_VOO_REMARCACAO": "Reprogramación:",
