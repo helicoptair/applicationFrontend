@@ -30,6 +30,9 @@ import { GetInTouchComponent } from '@shared-components/get-in-touch/get-in-touc
 import { VoosService } from '@services/voos.service';
 import { Voos } from '@models/voos';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',
@@ -45,6 +48,7 @@ import { TranslateModule } from '@ngx-translate/core';
     PropertiesSearchComponent,
     PropertiesSearchResultsFiltersComponent,
     PropertiesToolbarComponent,
+    MatIconModule,
     LoadMoreComponent,
     PropertyItemComponent,
     NgClass,
@@ -52,6 +56,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatProgressSpinnerModule,
     MissionComponent,
     OurServicesComponent,
+    MatButtonModule,
     TestimonialsComponent,
     HotOfferTodayComponent,
     FeaturedPropertiesComponent,
