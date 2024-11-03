@@ -64,14 +64,15 @@ export class RegisterComponent implements OnInit {
       // recaptcha: [null, Validators.required],
       name: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(64)]],
       email: ['', [Validators.required, Validators.minLength(5), Validators.email, Validators.maxLength(64)]],
-      type: ['', [Validators.required, Validators.minLength(7), Validators.maxLength(10)]],
-      city: ['', Validators.required],
-      state: ['', Validators.required],
-      country: ['', Validators.required],
-      line1: ['', Validators.required],
-      line2: [''],
-      zipcode: ['', Validators.required],
-      document: ['', [Validators.required, Validators.minLength(11), Validators.maxLength(14)]],
+      telefone: ['', Validators.required],
+      type: ['none', Validators.required],
+      city: ['none', Validators.required],
+      state: ['none', Validators.required],
+      country: ['none', Validators.required],
+      line1: ['none', Validators.required],
+      line2: ['none'],
+      zipcode: ['none', Validators.required],
+      document: ['none', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(12)]],
       confirmPassword: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(12)]],
       foto: ['']
@@ -97,7 +98,7 @@ export class RegisterComponent implements OnInit {
   }
 
   processarSucesso(response: any) {
-    this.snackBar.open('Cadastro realizado, acesse seu email para ativar sua conta!', '×', { panelClass: 'success', verticalPosition: 'top', duration: 3000 });
+    this.snackBar.open('Cadastro realizado, acesse seu email para ativar sua conta!', '×', { panelClass: 'success', verticalPosition: 'bottom', duration: 5000 });
     this.registerForm.reset();
     this.errors = [];
     

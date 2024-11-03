@@ -13,6 +13,7 @@ export class User {
     document!: string;
     foto!: string;
     fotoUpload!: string;
+    telefone!: string;
 }
 
 export class ResetPassword {

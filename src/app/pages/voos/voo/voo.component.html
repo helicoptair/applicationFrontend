@@ -358,7 +358,7 @@
                                 <span>R$ {{voo.preco_cartao_total}} em cartão</span>
                             </div> 
                         </div>  
-                        <div style="text-align: center; margin-top: 20px;">
+                        <div fxHide="false" fxHide.gt-sm="true" style="text-align: center; margin-top: 20px;">
                             <button mat-raised-button [ngStyle]="{'background-color':'#3EA201'}" style="color: white; margin-top: 10px;" (click)="sidenav.toggle()">{{ 'REALIZAR_RESERVA_VOO' | translate }}</button>
                         </div>
                     </mat-card>

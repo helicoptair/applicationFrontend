@@ -1,11 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { AuthService } from '@services/auth.service';
 import { ConfirmEmail } from './ConfirmEmail';
+import { MatButtonModule } from '@angular/material/button';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-email-confirmation',
   standalone: true,
+  imports:[
+    MatButtonModule,
+    RouterModule,
+    ReactiveFormsModule,
+    NgClass,
+  ],
   templateUrl: './emailConfirmation.component.html'
 })
 export class EmailConfirmationComponent implements OnInit {

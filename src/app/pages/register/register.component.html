@@ -4,7 +4,7 @@
             <mat-card [style.max-width.px]="500" class="p-3">
                 <div fxLayout="column" fxLayoutAlign="center center" class="text-center">  
                     <h1 class="uppercase">Cadastro</h1>  
-                    <a mat-button routerLink="/login" color="accent" class="w-100">Já possui conta? Entrar!</a>  
+                    <a mat-button routerLink="/login" color="accent" class="w-100">Já possui conta? Clique aqui para entrar!</a>  
                 </div>
                 <form [formGroup]="registerForm" (ngSubmit)="Register()"> 
                     <mat-form-field  appearance="outline" class="w-100 mt-3">
@@ -42,7 +42,26 @@
                             }
                         </mat-error> 
                     </mat-form-field>
-                    <mat-form-field  appearance="outline" class="w-100 mt-2">
+                    <mat-form-field appearance="outline" class="w-100 mt-3">
+                        <mat-icon matPrefix class="mr-1 text-muted">phone</mat-icon>
+                        <mat-label>Telefone</mat-label>
+                        <input matInput placeholder="Whatsapp" formControlName="telefone" required>
+                        <mat-error>
+                            @if (registerForm.controls.email.errors?.required) {
+                                Campo obrigatório
+                            }
+                            @if (registerForm.controls.email.hasError('minlength')) {
+                                Mínimo 5 caracteres
+                            }
+                            @if (registerForm.controls.email.hasError('maxlength')) {
+                                Máximo 64 caracteres
+                            }
+                            @if (registerForm.controls.email.hasError('email')) {
+                                Formato Inválido
+                            }
+                        </mat-error> 
+                    </mat-form-field>
+                    <!-- <mat-form-field  appearance="outline" class="w-100 mt-2">
                         <mat-icon matPrefix class="mr-1 text-muted">group</mat-icon>
                         <mat-label>Tipo de Pessoa</mat-label>
                         <mat-select placeholder="Selecione o tipo de pessoa" formControlName="type">
@@ -54,8 +73,8 @@
                                 Campo obrigatório
                             }
                         </mat-error> 
-                    </mat-form-field>
-                    <mat-form-field  appearance="outline" class="w-100 mt-3">
+                    </mat-form-field> -->
+                    <!-- <mat-form-field  appearance="outline" class="w-100 mt-3">
                         <mat-icon matPrefix class="mr-1 text-muted">assignment_ind</mat-icon>
                         <mat-label>Documento</mat-label>
                         <input matInput placeholder="Documento (somente números)" formControlName="document" required>
@@ -70,8 +89,8 @@
                                 Máximo 14 caracteres
                             }
                         </mat-error> 
-                    </mat-form-field>
-                    <mat-form-field  appearance="outline" class="w-100 mt-3">
+                    </mat-form-field> -->
+                    <!-- <mat-form-field  appearance="outline" class="w-100 mt-3">
                         <mat-icon matPrefix class="mr-1 text-muted">location_on</mat-icon>
                         <mat-label>Endereço</mat-label>
                         <input matInput placeholder="Endereço" formControlName="line1" required>
@@ -125,7 +144,7 @@
                                 Campo obrigatório
                             }
                         </mat-error> 
-                    </mat-form-field>
+                    </mat-form-field> -->
                     <mat-form-field  appearance="outline" class="w-100 mt-3">
                         <mat-icon matPrefix class="mr-1 text-muted">lock</mat-icon>
                         <mat-label>Senha</mat-label>
