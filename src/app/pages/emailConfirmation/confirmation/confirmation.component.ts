@@ -1,12 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { AuthService } from '@services/auth.service';
 import { ConfirmEmail } from '../ConfirmEmail';
 import { Router } from 'express';
+import { NgClass } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-confirmation',
   standalone: true,
+  imports:[
+    MatButtonModule,
+    RouterModule,
+    ReactiveFormsModule,
+    NgClass,
+  ],
   templateUrl: './confirmation.component.html'
 })
 export class ConfirmationComponent implements OnInit {
