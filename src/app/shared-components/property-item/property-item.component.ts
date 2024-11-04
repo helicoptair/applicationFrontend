@@ -14,6 +14,7 @@ import { CurrencyPipe, DatePipe } from '@angular/common';
 import { RatingComponent } from '@shared-components/rating/rating.component';
 import { Voos } from '@models/voos';
 import { environment } from '../../../environments/environment';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-property-item',
@@ -22,6 +23,7 @@ import { environment } from '../../../environments/environment';
     RouterModule,
     FlexLayoutModule,
     MatCardModule,
+    TranslateModule,
     MatButtonModule,
     MatIconModule,
     SwiperModule,

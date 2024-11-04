@@ -132,6 +132,35 @@
   "FOOTER": {
     "TEXTO": "Ven a cumplir tu sueño de volar sobre Río de Janeiro en un paseo épico en helicóptero.",
     "LOCALIZACAO": "Aeropuerto de Jacarepaguá - Barra da Tijuca",
-    "HORARIO": "Salidas: Todos los días de 9:00 - 17:00"
+    "HORARIO": "Salidas: Todos los días de 9:00 - 17:00",
+    "DIREITOS": "Copyright © 2024 - Todos los derechos reservados"
+  },
+  "GET_IN_TOUCH": {  
+    "TITULO": "¿AÚN TIENES PREGUNTAS?",
+    "SUBTITULO": "Haz tu reserva directamente con nuestro equipo.",
+    "ENVIE_MENSAGEM": "ENVÍANOS UN MENSAJE",
+    "BOTAO_WHATSAPP": "RESERVAR POR WHATSAPP"
+  },
+  "ACESSO": {
+    "TITULO": "CUENTA"
+  },
+  "CARD": {
+    "TEMPO_VOO": "Tiempo de vuelo",
+    "QNTD": "Número de personas",
+    "EXCLUSIVO": "Exclusivo",
+    "FOTO_OU_VIDEO": "Con foto o vídeo",
+    "FOTO_E_VIDEO": "Con foto + vídeo",
+    "VER_MAIS": "Ver más",
+    "POR_PESSOA": "*por persona",
+    "SIM": "sí",
+    "NAO": "no"
+  },
+  "BUSCADOR": {
+    "CATEGORIA_VOO_PANORAMICO": "Panorámica",
+    "CATEGORIA_VOO_TRANSLADO": "Transferir",
+    "TIPO_VOO_COMPARTILHADO": "Compartido",
+    "TIPO_VOO_EXCLUSIVO": "Exclusivo",
+    "TIPO_VOO_FOTO_OU_VIDEO": "Con foto o vídeo",
+    "TIPO_VOO_FOTO_E_VIDEO": "Con foto + vídeo"
   }
 }

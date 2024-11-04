@@ -3,6 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-get-in-touch',
@@ -11,6 +12,7 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
     RouterModule,
     FlexLayoutModule,
     MatIconModule,
+    TranslateModule,
     MatButtonModule
   ],
   templateUrl: './get-in-touch.component.html',

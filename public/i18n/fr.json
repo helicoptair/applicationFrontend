@@ -132,6 +132,35 @@
   "FOOTER": {
     "TEXTO": "Venez réaliser votre rêve de survoler Rio de Janeiro lors d'un vol épique en hélicoptère.",
     "LOCALIZACAO": "Aéroport de Jacarepaguá - Barra da Tijuca",
-    "HORARIO": "Départs: tous les jours de 9:00 - 17:00"
+    "HORARIO": "Départs: tous les jours de 9:00 - 17:00",
+    "DIREITOS": "Copyright © 2024 - Tous droits réservés"
+  },
+  "GET_IN_TOUCH": {  
+    "TITULO": "VOUS AVEZ ENCORE DES QUESTIONS?",
+    "SUBTITULO": "Faites votre réservation directement auprès de notre équipe.",
+    "ENVIE_MENSAGEM": "ENVOYEZ-NOUS UN MESSAGE",
+    "BOTAO_WHATSAPP": "RÉSERVER PAR WHATSAPP"
+  },
+  "ACESSO": {
+    "TITULO": "COMPTE"
+  },
+  "CARD": {
+    "TEMPO_VOO": "Durée de vol",
+    "QNTD": "Nombre de personnes",
+    "EXCLUSIVO": "Exclusif",
+    "FOTO_OU_VIDEO": "Avec photo ou vidéo",
+    "FOTO_E_VIDEO": "Avec photo + vidéo",
+    "VER_MAIS": "Voir plus",
+    "POR_PESSOA": "*par personne",
+    "SIM": "oui",
+    "NAO": "non"
+  },
+  "BUSCADOR": {
+    "CATEGORIA_VOO_PANORAMICO": "Panoramique",
+    "CATEGORIA_VOO_TRANSLADO": "Transfert",
+    "TIPO_VOO_COMPARTILHADO": "Partagé",
+    "TIPO_VOO_EXCLUSIVO": "Exclusif",
+    "TIPO_VOO_FOTO_OU_VIDEO": "Avec photo ou vidéo",
+    "TIPO_VOO_FOTO_E_VIDEO": "Avec photo + vidéo"
   }
 }

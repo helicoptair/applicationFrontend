@@ -132,6 +132,35 @@
   "FOOTER": {
     "TEXTO": "Venha realizar seu sonho de sobrevoar o Rio de Janeiro em um passeio de helicóptero que será épico.",
     "LOCALIZACAO": "Aeroporto de Jacarepaguá - Barra da Tijuca",
-    "HORARIO": "Decolagens: Todos os dias das 9:00 - 17:00"
+    "HORARIO": "Decolagens: Todos os dias das 9:00 - 17:00",
+    "DIREITOS": "Copyright © 2024 - Todos os direitos reservados"
+  },
+  "GET_IN_TOUCH": {  
+    "TITULO": "AINDA FICOU COM DÚVIDAS?",
+    "SUBTITULO": "Realize sua reserva diretamente com nossa equipe.",
+    "ENVIE_MENSAGEM": "NOS ENVIE UMA MENSAGEM",
+    "BOTAO_WHATSAPP": "RESERVAR PELO WHATSAPP"
+  },
+  "ACESSO": {
+    "TITULO": "CONTA"
+  },
+  "CARD": {
+    "TEMPO_VOO": "Tempo de voo",
+    "QNTD": "Qntd de pessoas",
+    "EXCLUSIVO": "Exclusivo",
+    "FOTO_OU_VIDEO": "Com foto ou vídeo",
+    "FOTO_E_VIDEO": "Com foto + vídeo",
+    "VER_MAIS": "Ver mais",
+    "POR_PESSOA": "*por pessoa",
+    "SIM": "sim",
+    "NAO": "não"
+  },
+  "BUSCADOR": {
+    "CATEGORIA_VOO_PANORAMICO": "Panorâmico",
+    "CATEGORIA_VOO_TRANSLADO": "Translado",
+    "TIPO_VOO_COMPARTILHADO": "Compartilhado",
+    "TIPO_VOO_EXCLUSIVO": "Exclusivo",
+    "TIPO_VOO_FOTO_OU_VIDEO": "Com foto ou vídeo",
+    "TIPO_VOO_FOTO_E_VIDEO": "Com foto + vídeo"
   }
 }

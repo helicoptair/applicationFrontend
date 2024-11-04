@@ -65,17 +65,17 @@
                     <div>
                         @if (settings.currency == 'USD') {
                             <h3 class="primary-color price">
-                                <span>a partir de {{voo.preco_pix_pessoa | currency : 'USD' : 'symbol' : '1.0'}}</span>
+                                <span>{{ 'VOO_PRECO_PARTIR_DE' | translate }} {{voo.preco_pix_pessoa | currency : 'USD' : 'symbol' : '1.0'}}</span>
                             </h3>
                         }
                         @if (settings.currency == 'EUR') {
                             <h3 class="primary-color price">
-                                <span>a partir de {{voo.preco_pix_pessoa | currency : 'EUR' : 'symbol' : '1.0'}}</span>
+                                <span>{{ 'VOO_PRECO_PARTIR_DE' | translate }} {{voo.preco_pix_pessoa | currency : 'EUR' : 'symbol' : '1.0'}}</span>
                             </h3>
                         } 
                         @if (settings.currency == 'BRL') {
                             <h3 class="primary-color">
-                                <span>a partir de {{voo.preco_pix_pessoa | currency : 'BRL' : 'symbol' : '1.0'}} <span style="font-size: 10px;">*por pessoa</span></span>
+                                <span>{{ 'VOO_PRECO_PARTIR_DE' | translate }} {{voo.preco_pix_pessoa | currency : 'BRL' : 'symbol' : '1.0'}} <span style="font-size: 10px;">{{ 'CARD.POR_PESSOA' | translate }}</span></span>
                             </h3>
                         } 
                     </div>
@@ -89,22 +89,22 @@
                 }             
 
                 <div class="features mt-3">                    
-                    <p><span>Tempo de voo</span><span>{{voo.tempo_de_voo_minutos}} min</span></p>
-                    <p><span>Qntd de pessoas</span><span>{{voo.quantidade_pax}}</span></p>
+                    <p><span>{{ 'CARD.TEMPO_VOO' | translate }}</span><span>{{voo.tempo_de_voo_minutos}} min</span></p>
+                    <p><span>{{ 'CARD.QNTD' | translate }}</span><span>{{voo.quantidade_pax}}</span></p>
                     @if(voo.status == "Exclusivo" || voo.status == "Promo" || voo.status == "Foto ou Vídeo" || voo.status == "Foto e Vídeo"){
-                        <p><span>Exclusividade</span><span>Sim</span></p>
+                        <p><span>{{ 'CARD.EXCLUSIVO' | translate }}</span><span>{{ 'CARD.SIM' | translate }}</span></p>
                     }@else{
-                        <p><span>Exclusividade</span><span>Não</span></p>
+                        <p><span>{{ 'CARD.EXCLUSIVO' | translate }}</span><span>{{ 'CARD.NAO' | translate }}</span></p>
                     }
                     @if(voo.status == "Foto ou Vídeo"){
-                        <p><span>Com foto ou vídeo</span><span>Sim</span></p>
+                        <p><span>{{ 'CARD.FOTO_OU_VIDEO' | translate }}</span><span>{{ 'CARD.SIM' | translate }}</span></p>
                     }@else{
-                        <p><span>Com foto ou vídeo</span><span>Não</span></p>
+                        <p><span>{{ 'CARD.FOTO_OU_VIDEO' | translate }}</span><span>{{ 'CARD.NAO' | translate }}</span></p>
                     }
                     @if(voo.status == "Foto e Vídeo"){
-                        <p><span>Com foto + vídeo</span><span>Sim</span></p>
+                        <p><span>{{ 'CARD.FOTO_E_VIDEO' | translate }}</span><span>{{ 'CARD.SIM' | translate }}</span></p>
                     }@else{
-                        <p><span>Com foto + vídeo</span><span>Não</span></p>
+                        <p><span>{{ 'CARD.FOTO_E_VIDEO' | translate }}</span><span>{{ 'CARD.NAO' | translate }}</span></p>
                     }
                 </div> 
 
@@ -116,7 +116,7 @@
                     span class="mx-2">{{property.published | date:"dd MMMM, yyyy" }}</span>
                 </p> -->
                 <div>
-                    <a [routerLink]="['/voos', voo.url_voo]" mat-stroked-button color="primary" class="uppercase" style="margin-top: 20px;">Ver mais</a>
+                    <a [routerLink]="['/voos', voo.url_voo]" mat-stroked-button color="primary" class="uppercase" style="margin-top: 20px;">{{ 'CARD.VER_MAIS' | translate }}</a>
                 </div> 
             </mat-card-actions> 
         </div>        
