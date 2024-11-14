@@ -2,18 +2,18 @@
     @if (slides.length >= 1) { 
         <div class="swiper-container h-100" [swiper]="config" (indexChange)="onIndexChange($event)">
             <div class="swiper-wrapper h-100"> 
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <div [attr.data-background]="slides[0].image" class="slide-item swiper-lazy">
                         <div class="swiper-lazy-preloader"></div>
                     </div>
-                </div>
-                <!-- @for (slide of slides; track $index) {
+                </div> -->
+                @for (slide of slides; track $index) {
                     <div class="swiper-slide">
                         <div [attr.data-background]="slide.image" class="slide-item swiper-lazy">
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
-                } -->
+                }
             </div>     
             <!-- <button mat-mini-fab color="primary" class="swiper-button-prev swipe-arrow"><mat-icon>keyboard_arrow_left</mat-icon></button>
             <button mat-mini-fab color="primary" class="swiper-button-next swipe-arrow"><mat-icon>keyboard_arrow_right</mat-icon></button> -->
