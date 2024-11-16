@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { CurrencyPipe } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header-carousel',
@@ -13,6 +14,7 @@ import { CurrencyPipe } from '@angular/common';
   imports: [
     FlexLayoutModule,
     MatButtonModule,
+    TranslateModule,
     MatIconModule,
     SwiperModule,
     MatCardModule,

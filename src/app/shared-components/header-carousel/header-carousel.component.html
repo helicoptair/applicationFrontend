@@ -11,19 +11,19 @@
                     <div class="swiper-slide">
                         <div [attr.data-background]="slide.image" class="slide-item swiper-lazy">
                             @if(slide.image == "images/slides/voospanoramicos_slide1-big.jpg"){
-                                <div style="text-align: center;">
+                                <div style="text-align: center;">{{ 'CARD.TEMPO_VOO' | translate }}
                                     <h1 style="color: white; text-align: center; padding-top: 50px; font-size: 40px; text-shadow: 0.1em 0.1em 0.2em black">Helicoptair</h1>
-                                    <h3 style="color: white; text-align: center; font-size: 20px; text-shadow: 0.1em 0.1em 0.2em black">Venha voar no melhor passeio de helicóptero no Rio de Janeiro</h3>
+                                    <h3 style="color: white; text-align: center; font-size: 20px; text-shadow: 0.1em 0.1em 0.2em black">{{ 'SLIDE.TITULO_1' | translate }}</h3>
                                     <!-- <a href="#testeRolagem" mat-raised-button color="primary" class="uppercase" style="margin-top: 20px;">Conhecer voos</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=5521995585986" target="_blank" mat-raised-button color="primary" class="uppercase" style="margin-top: 20px; background-color: #25d366;">Continuar no WhatsApp</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5521995585986" target="_blank" mat-raised-button color="primary" class="uppercase" style="margin-top: 20px; background-color: #25d366;">{{ 'SLIDE.BOTAO_WHATSAPP' | translate }}</a>
                                 </div>
                             }
                             @if(slide.image == "images/slides/voospanoramicos_slide3-big.jpg"){
                                 <div style="text-align: center;">
-                                    <h1 style="color: white; text-align: center; padding-top: 50px; font-size: 40px; text-shadow: 0.1em 0.1em 0.2em black">Viva momentos épicos</h1>
-                                    <h3 style="color: white; text-align: center; font-size: 20px; text-shadow: 0.1em 0.1em 0.2em black">Venha entender porque o Rio de Janeiro é a Cidade Maravilhosa</h3>
+                                    <h1 style="color: white; text-align: center; padding-top: 50px; font-size: 40px; text-shadow: 0.1em 0.1em 0.2em black">{{ 'SLIDE.TITULO_3' | translate }}</h1>
+                                    <h3 style="color: white; text-align: center; font-size: 20px; text-shadow: 0.1em 0.1em 0.2em black">{{ 'SLIDE.TITULO_2' | translate }}</h3>
                                     <!-- <a href="#testeRolagem" mat-raised-button color="primary" class="uppercase" style="margin-top: 20px;">Conhecer voos</a> -->
-                                    <a href="https://api.whatsapp.com/send?phone=5521995585986" target="_blank" mat-raised-button color="primary" class="uppercase" style="margin-top: 20px; background-color: #25d366;">Continuar no WhatsApp</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5521995585986" target="_blank" mat-raised-button color="primary" class="uppercase" style="margin-top: 20px; background-color: #25d366;">{{ 'SLIDE.BOTAO_WHATSAPP' | translate }}</a>
                                 </div>
                             }
                             <div class="swiper-lazy-preloader"></div>

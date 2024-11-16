@@ -162,5 +162,11 @@
     "TIPO_VOO_EXCLUSIVO": "Exclusif",
     "TIPO_VOO_FOTO_OU_VIDEO": "Avec photo ou vidéo",
     "TIPO_VOO_FOTO_E_VIDEO": "Avec photo + vidéo"
+  },
+  "SLIDE": {
+    "TITULO_1": "Venez voler pour le meilleur tour en hélicoptère de Rio de Janeiro",
+    "TITULO_2": "Venez comprendre pourquoi Rio de Janeiro est la Ville Merveilleuse",
+    "TITULO_3": "Vivez des moments épiques",
+    "BOTAO_WHATSAPP": "Continuer sur WhatsApp"
   }
 }

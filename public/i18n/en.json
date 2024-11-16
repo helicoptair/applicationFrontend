@@ -162,5 +162,11 @@
     "TIPO_VOO_EXCLUSIVO": "Exclusive",
     "TIPO_VOO_FOTO_OU_VIDEO": "With photo or video",
     "TIPO_VOO_FOTO_E_VIDEO": "With photo + video"
+  },
+  "SLIDE": {
+    "TITULO_1": "Come to fly on the best helicopter tour in Rio de Janeiro",
+    "TITULO_2": "Come and understand why Rio de Janeiro is the Wonderful City",
+    "TITULO_3": "Live epic moments",
+    "BOTAO_WHATSAPP": "Continue on WhatsApp"
   }
 }

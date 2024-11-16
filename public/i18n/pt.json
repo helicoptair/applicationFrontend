@@ -162,5 +162,11 @@
     "TIPO_VOO_EXCLUSIVO": "Exclusivo",
     "TIPO_VOO_FOTO_OU_VIDEO": "Com foto ou vídeo",
     "TIPO_VOO_FOTO_E_VIDEO": "Com foto + vídeo"
+  },
+  "SLIDE": {
+    "TITULO_1": "Venha voar no melhor passeio de helicóptero no Rio de Janeiro",
+    "TITULO_2": "Venha entender porque o Rio de Janeiro é a Cidade Maravilhosa",
+    "TITULO_3": "Viva momentos épicos",
+    "BOTAO_WHATSAPP": "Continuar no WhatsApp"
   }
 }
