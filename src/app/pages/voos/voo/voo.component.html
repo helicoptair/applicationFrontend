@@ -1,7 +1,7 @@
 <div class="px-3">    
     <div class="theme-container"> 
         <!-- BOTAO WZP -->
-    <a fxShow fxHide.lt-md href="https://api.whatsapp.com/send?phone=5521995585986" target="_blank" style="position: fixed; bottom: 30px; left: 30px; cursor: pointer; z-index: 1; background-color: #25d366;" mat-raised-button color="warn" class="uppercase mx-1"><mat-icon color="white">call</mat-icon>WHATSAPP</a>
+    <a fxShow fxHide.lt-md href="https://api.whatsapp.com/send?phone=5521995585986&text=Ol%C3%A1!%20Vim%20do%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" style="position: fixed; bottom: 30px; left: 30px; cursor: pointer; z-index: 1; background-color: #25d366;" mat-raised-button color="warn" class="uppercase mx-1"><mat-icon color="white">call</mat-icon>WHATSAPP</a>
     
         <mat-sidenav-container [dir]="settings.rtl ? 'rtl' : 'ltr'" class="single-property mt-3">
             <mat-sidenav #sidenav [opened]="sidenavOpen" [mode]="sidenavOpen ? 'side' : 'over'" position="end" autoFocus="false" (openedChange)="onOpenedChange()">
@@ -91,7 +91,7 @@
                                     <button mat-raised-button [ngStyle]="{'background-color':'#3EA201'}" style="color: white;" [routerLink]="['/login']">{{ 'FAZER_LOGIN_PRA_RESERVAR' | translate }}</button>
                                 </div>
                                 <div class="text-center" style="margin-top: 20px;">
-                                    <a mat-flat-button href="https://api.whatsapp.com/send?phone=5521995585986" [ngStyle]="{'background-color':'#3EA201', 'color':'white'}" target="_blank" class="mx-3 uppercase">{{ 'RESERVAR_PELO_ZAP' | translate }}</a>
+                                    <a mat-flat-button href="https://api.whatsapp.com/send?phone=5521995585986&text=Ol%C3%A1!%20Vim%20do%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." [ngStyle]="{'background-color':'#3EA201', 'color':'white'}" target="_blank" class="mx-3 uppercase">{{ 'RESERVAR_PELO_ZAP' | translate }}</a>
                                 </div>
                             }
                         </div>
