@@ -28,8 +28,8 @@ export class AppComponent {
               private domHandlerService: DomHandlerService) {
     this.settings = this.settingsService.settings;
     translate.addLangs(['en', 'de', 'fr', 'pt', 'sp']);
-    translate.setDefaultLang('en');
-    translate.use('en');
+    translate.setDefaultLang('pt');
+    translate.use('pt');
   }
 
   ngAfterViewInit() {
