@@ -17,7 +17,7 @@ import { RatingComponent } from '@shared-components/rating/rating.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatInputModule } from '@angular/material/input';
 import { PropertyItemComponent } from '@shared-components/property-item/property-item.component';
-import { CurrencyPipe, DatePipe, NgClass } from '@angular/common';
+import { CommonModule, CurrencyPipe, DatePipe, NgClass } from '@angular/common';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CommentsComponent } from '@shared-components/comments/comments.component';
@@ -37,6 +37,8 @@ import { CreateSession } from '@models/create_session';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import moment from 'moment';
 import { TranslateModule } from '@ngx-translate/core';
+import { AuthService } from '@services/auth.service';
+import { Duvidas } from '@models/duvidas';
 
 @Component({
   selector: 'app-voo',
@@ -49,6 +51,7 @@ import { TranslateModule } from '@ngx-translate/core';
     PipesModule,
     TranslateModule,
     MatIconModule,
+    CommonModule,
     MatProgressSpinnerModule,
     NgScrollbarModule,
     MatCardModule,
@@ -83,9 +86,12 @@ export class VooComponent implements OnInit {
   private sub: any;
   imagens: string = environment.imagensUrl;
   public voo: Voos;
+  public duvida: Duvidas;
   public createSession: CreateSession;
   public property: Property;
   public settings: Settings;
+  public spinner: boolean = false;
+  public emailEnviado: boolean = false;
   public embedVideo: any;
   public relatedProperties: Property[];
   public featuredProperties: Property[];
@@ -391,8 +397,25 @@ export class VooComponent implements OnInit {
 
   public onContactFormSubmit(values: Object) {
     if (this.contactForm.valid) {
-      console.log(values);
+      this.spinner = true;
+
+      this.duvida = Object.assign({}, this.duvida, this.contactForm.value);
+
+      this.voosService.enviarDuvida(this.duvida).subscribe(
+        success => { 
+          this.sucesso(success);
+        },
+        error => {
+          this.snackBar.open("Erro!!", 'x', { panelClass: 'success', verticalPosition: 'top', duration: 2000 });
+          this.spinner = false;
+        });
     }
+  }
+
+  public sucesso(response: any){
+    this.contactForm.reset();
+    this.spinner = false;
+    this.emailEnviado = true;
   }
 
   public onMortgageFormSubmit(values: Object) {

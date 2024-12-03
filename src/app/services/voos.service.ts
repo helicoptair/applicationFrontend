@@ -6,6 +6,7 @@ import { Voos } from '@models/voos';
 import { CreateSession } from '@models/create_session';
 import { Reservas } from '@models/reservas';
 import { BaseService } from './base.service';
+import { Duvidas } from '@models/duvidas';
 
 @Injectable({
   providedIn: 'root',
@@ -85,4 +86,12 @@ export class VoosService extends BaseService {
         .pipe(
           catchError(super.serviceError));
   } 
+
+  enviarDuvida(form: Duvidas): Observable<any> {
+    return this.http
+        .post(this.urlServiceV1 + 'enviar-form', form, this.ObterAuthHeaderJson())
+        .pipe(
+            map(super.extractData),
+            catchError(super.serviceError));
+    }
 }

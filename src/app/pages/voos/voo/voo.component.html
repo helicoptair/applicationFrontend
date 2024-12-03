@@ -117,7 +117,7 @@
 
                                 <mat-form-field appearance="outline" class="w-100">
                                     <mat-label>Celular (WhatsApp)</mat-label>
-                                    <input matInput placeholder="Celular (WhatsApp)" autocomplete="off" formControlName="phone" type="number">
+                                    <input matInput placeholder="Celular (WhatsApp)" autocomplete="off" formControlName="phone">
                                     @if (contactForm.controls.phone.errors?.required) {
                                         <mat-error></mat-error>    
                                     }                                         
@@ -131,7 +131,13 @@
                                     } 
                                 </mat-form-field>  
                                 <div class="text-center">
-                                    <button mat-raised-button color="primary" type="submit">{{ 'WIDGET_BOTAO_ENVIAR' | translate }}</button>
+                                    <button *ngIf="!spinner && !emailEnviado" mat-raised-button color="primary" type="submit">{{ 'WIDGET_BOTAO_ENVIAR' | translate }}</button>
+                                    <div *ngIf="spinner">
+                                        <mat-spinner></mat-spinner>
+                                    </div>
+                                    <div *ngIf="!spinner && emailEnviado">
+                                        <img src="images/profile/confirm-icon.webp" width="20%"/>
+                                    </div>
                                 </div>
                             </form>
                         </div>
