@@ -1,7 +1,7 @@
 <div fxLayout="row wrap">
     @for (item of items; track $index) {
         <div fxFlex="100" fxFlex.gt-sm="50" fxFlex.sm="50" class="p-5">
-            @if(item.name == 'Outros Voos'){
+            @if(item.name == 'Other flights'){
                 <mat-card class="pricing-card text-center border-accent p-0 h-100" style="border-color: rgb(0, 53, 178);">
                     <h2 class="pricing-title my-3">{{item.name}}</h2>
                     <div class="bg-accent pricing-header p-2" fxLayout="column" fxLayoutAlign="center center" style="min-height: 50px; background-color: rgb(0, 53, 178);">
@@ -32,7 +32,7 @@
                     </div>
                 </mat-card>
             }
-            @if(item.name == 'Passeio VIP'){
+            @if(item.name == 'VIP Tour'){
                 <mat-card class="pricing-card text-center border-accent p-0 h-100" style="border-color: rgb(59, 59, 59);">
                     <h2 class="pricing-title my-3">{{item.name}}</h2>
                     <div class="bg-accent pricing-header p-2" fxLayout="column" fxLayoutAlign="center center" style="min-height: 50px; background-color: rgb(59, 59, 59);">   
