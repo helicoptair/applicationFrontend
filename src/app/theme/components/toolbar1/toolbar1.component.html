@@ -24,7 +24,12 @@
 </mat-toolbar>  
 <mat-toolbar id="main-toolbar" class="mat-elevation-z2"> 
   <div class="theme-container" fxLayout="row" fxLayoutAlign="space-between center">
-    <a class="logo" routerLink="/" ><app-logo></app-logo></a> 
+    @if(!isLuxury){
+      <a class="logo" routerLink="/" ><app-logo></app-logo></a> 
+    }
+    @if(isLuxury){
+      <app-logo-white></app-logo-white>
+    }
     <div fxShow="false" fxShow.gt-sm class="horizontal-menu">            
         <app-horizontal-menu [menuParentId]="0"></app-horizontal-menu>
     </div> 
@@ -51,11 +56,12 @@
         <button mat-raised-button color="success" class="uppercase mx-1">Register</button>
       </div>   -->
       
-     
-      @if(!userLogado){
-        <a routerLink="/login" mat-raised-button color="primary" fxShow="false" fxShow.gt-xs class="uppercase">{{ 'LOGIN' | translate }}</a>
-        <a routerLink="/register" mat-raised-button color="success" fxShow="false" fxShow.gt-xs class="uppercase" style="margin-left: 10px;">{{ 'REGISTER' | translate }}</a>
-      }@else {<a (click)="logout()" mat-raised-button color="warn" fxShow="false" fxShow.gt-xs class="uppercase">{{ 'LOGOUT' | translate }}</a>}
+     @if(!isLuxury){
+       @if(!userLogado){
+         <a routerLink="/login" mat-raised-button color="primary" fxShow="false" fxShow.gt-xs class="uppercase">{{ 'LOGIN' | translate }}</a>
+         <a routerLink="/register" mat-raised-button color="success" fxShow="false" fxShow.gt-xs class="uppercase" style="margin-left: 10px;">{{ 'REGISTER' | translate }}</a>
+       }@else {<a (click)="logout()" mat-raised-button color="warn" fxShow="false" fxShow.gt-xs class="uppercase">{{ 'LOGOUT' | translate }}</a>}
+     }
 
     </div>   
   </div>     

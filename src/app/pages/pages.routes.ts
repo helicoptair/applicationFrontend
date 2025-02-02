@@ -59,6 +59,10 @@ export const routes: Routes = [
                 loadChildren: () => import('./blog/blog.routes').then(p => p.routes)
             },
             {
+                path: 'luxury',
+                loadChildren: () => import('./luxury/luxury.routes').then(p => p.routes)
+            },
+            {
                 path: 'terms-conditions',
                 loadComponent: () => import('./terms-conditions/terms-conditions.component').then(c => c.TermsConditionsComponent)
             },

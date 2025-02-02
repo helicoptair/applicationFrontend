@@ -11,7 +11,7 @@ import { LogoComponent } from '@shared-components/logo/logo.component';
 import { HorizontalMenuComponent } from '../menu/horizontal-menu/horizontal-menu.component';
 import { MatBadgeModule } from '@angular/material/badge';
 import { TranslateModule } from '@ngx-translate/core';
-import { Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { LocalStorageUtils } from '../../../utils/localStorage';
@@ -19,6 +19,7 @@ import { AuthService } from '@services/auth.service';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { BlogComponent } from '../blog/blog.component';
 import { AcessoComponent } from '../acesso/acesso.component';
+import { LogoWhiteComponent } from '@shared-components/logo-white/logo-white.component';
 
 @Component({
   selector: 'app-toolbar1',
@@ -40,20 +41,28 @@ import { AcessoComponent } from '../acesso/acesso.component';
     LangComponent,
     UserMenuComponent,
     LogoComponent,
+    LogoWhiteComponent,
     HorizontalMenuComponent
   ],
   templateUrl: './toolbar1.component.html'
 })
 export class Toolbar1Component implements OnInit {
   @Output() onMenuIconClick: EventEmitter<any> = new EventEmitter<any>();
-  constructor(public appService: AppService, public router: Router, private authService: AuthService, public snackBar: MatSnackBar) { }
+  constructor(public appService: AppService, public router: Router, private authService: AuthService, public snackBar: MatSnackBar, private activatedRoute: ActivatedRoute) { }
 
   LocalStorage = new LocalStorageUtils();
   token!: string;
   userLogado: boolean = true;
+  rotaAtual: string;
+  isLuxury: boolean = false;
 
   ngOnInit() { 
     this.usuarioLogado();
+
+    if(this.router.url == '/luxury'){
+      this.isLuxury = true;
+      console.log("IS LUXURY: " + this.isLuxury);
+    } else {this.isLuxury = false;}
   }
 
   public sidenavToggle() {

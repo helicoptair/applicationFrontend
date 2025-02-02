@@ -50,6 +50,7 @@ export class PagesComponent implements OnInit {
   public showBackToTop: boolean = false;
   public scrolledCount = 0;
   public settings: Settings;
+  isLuxury: boolean = false;
 
   constructor(public settingsService: SettingsService,
               public router: Router,
@@ -61,6 +62,11 @@ export class PagesComponent implements OnInit {
     this.toolbarTypeOption = this.settings.toolbar;
     this.headerTypeOption = this.settings.header;
     this.searchPanelVariantOption = this.settings.searchPanelVariant;
+
+    if(this.router.url == '/luxury'){
+      this.isLuxury = true;
+      console.log("IS LUXURY: " + this.isLuxury);
+    } else {this.isLuxury = false;}
   }
 
   public changeTheme(theme: string) {

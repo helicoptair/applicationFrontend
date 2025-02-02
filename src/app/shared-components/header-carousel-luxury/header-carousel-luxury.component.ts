@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-header-carousel',
+  selector: 'app-header-carousel-luxury',
   standalone: true,
   imports: [
     FlexLayoutModule,
@@ -21,10 +21,10 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
     MatCardModule,
     CurrencyPipe
   ],
-  templateUrl: './header-carousel.component.html',
-  styleUrls: ['./header-carousel.component.scss']
+  templateUrl: './header-carousel-luxury.component.html',
+  styleUrls: ['./header-carousel-luxury.component.scss']
 })
-export class HeaderCarouselComponent implements OnInit {
+export class HeaderCarouselLuxuryComponent implements OnInit {
   @Input('slides') slides: Array<any> = [];
   @Input('contentOffsetToTop') contentOffsetToTop: boolean;
   @Input('fullscreen') fullscreen: boolean = false;
@@ -41,10 +41,6 @@ export class HeaderCarouselComponent implements OnInit {
         this.settings.contentOffsetToTop = this.contentOffsetToTop;
       });
     }
-  }
-
-  navegar(){
-    this.router.navigate(['/luxury']);
   }
 
   ngAfterViewInit() {
