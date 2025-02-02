@@ -171,5 +171,18 @@
     "TITULO_5": "A complete tour with all luxury, glamor and exclusivity",
     "BOTAO_WHATSAPP": "Continue on WhatsApp",
     "BOTAO_CONHECER": "See the flight"
+  },
+  "VIP": {
+    "BOTAO_AGENDAR": "I am VIP. I want to book it",
+    "PRECO": "Live the best experience of your life for less than $2,500"
+  },
+  "PRICING": {
+    "SALA_VIP": "VIP room",
+    "TEMPO_VOO": "60 minutes of flight",
+    "TRANSFER": "Transfer by Jeep Commander",
+    "CHAMPAGNE": "Champagne",
+    "FOTOGRAFIA": "Photography",
+    "GRAVACAO": "Recording",
+    "BUQUE": "Bouquet"
   }
 }

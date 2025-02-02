@@ -6,6 +6,7 @@ import { FilterNeighborhoodsPipe } from './filter-neighborhoods';
 import { FilterStreetsPipe } from './filter-streets.pipe';
 import { CategoriaVooPipe } from './categoriaVoo.pipe';
 import { StatusReservaPipe } from './statusReserva.pipe';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
     imports: [ 
@@ -16,6 +17,7 @@ import { StatusReservaPipe } from './statusReserva.pipe';
         FilterNeighborhoodsPipe,
         FilterStreetsPipe,
         CategoriaVooPipe,
+        SafePipe,
         StatusReservaPipe
     ],
     exports: [
@@ -23,6 +25,7 @@ import { StatusReservaPipe } from './statusReserva.pipe';
         FilterNeighborhoodsPipe,
         FilterStreetsPipe,
         CategoriaVooPipe,
+        SafePipe,
         StatusReservaPipe
     ]
 })

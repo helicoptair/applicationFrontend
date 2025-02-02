@@ -171,5 +171,18 @@
     "TITULO_5": "Un circuit complet avec tout le luxe, le glamour et l'exclusivité",
     "BOTAO_WHATSAPP": "Continuer sur WhatsApp",
     "BOTAO_CONHECER": "Découvrir le vol"
+  },
+  "VIP": {
+    "BOTAO_AGENDAR": "Je suis VIP. Je veux planifier",
+    "PRECO": "Vivez la meilleure expérience de votre vie pour moins de 2,500$"
+  },
+  "PRICING": {
+    "SALA_VIP": "Salle VIP",
+    "TEMPO_VOO": "60 minutes de vol",
+    "TRANSFER": "Transfert depuis Jeep Commander",
+    "CHAMPAGNE": "Champagne",
+    "FOTOGRAFIA": "Photographie",
+    "GRAVACAO": "Enregistrement",
+    "BUQUE": "Bouquet"
   }
 }

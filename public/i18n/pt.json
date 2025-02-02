@@ -171,5 +171,18 @@
     "TITULO_5": "Um passeio completo com todo luxo, glamour e exclusividade",
     "BOTAO_WHATSAPP": "Continuar no WhatsApp",
     "BOTAO_CONHECER": "Conhecer voo"
+  },
+  "VIP": {
+    "BOTAO_AGENDAR": "Eu sou VIP. Quero agendar",
+    "PRECO": "R$ 11.900 para viver a experiência mais incrível da sua vida"
+  },
+  "PRICING": {
+    "SALA_VIP": "Sala VIP",
+    "TEMPO_VOO": "60 minutos de voo",
+    "TRANSFER": "Transfer de Jeep Commander",
+    "CHAMPAGNE": "Champagne",
+    "FOTOGRAFIA": "Fotografia",
+    "GRAVACAO": "Gravação",
+    "BUQUE": "Buquê"
   }
 }

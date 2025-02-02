@@ -19,6 +19,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MonthlyPricingComponent } from '../pricing/monthly-pricing/monthly-pricing.component';
 import { YearlyPricingComponent } from '../pricing/yearly-pricing/yearly-pricing.component';
 import { MatIconModule } from '@angular/material/icon';
+import { SafePipe } from '../../theme/pipes/safe.pipe';
+import { PipesModule } from '../../theme/pipes/pipes.module';
 
 @Component({
   selector: 'app-luxury',
@@ -36,6 +38,7 @@ import { MatIconModule } from '@angular/material/icon';
     GetInTouchComponent,
     MatDividerModule,
     RouterModule,
+    PipesModule,
     TranslateModule,
     NgClass,
     MatIconModule,

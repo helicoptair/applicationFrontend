@@ -3,6 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-monthly-pricing',
@@ -11,6 +12,7 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    TranslateModule,
     FlexLayoutModule
   ],
   templateUrl: './monthly-pricing.component.html'

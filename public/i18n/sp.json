@@ -171,5 +171,18 @@
     "TITULO_5": "Un recorrido completo con todo lujo, glamour y exclusividad",
     "BOTAO_WHATSAPP": "Continuar en WhatsApp",
     "BOTAO_CONHECER": "Descubrir el vuelo"
+  },
+  "VIP": {
+    "BOTAO_AGENDAR": "Yo soy VIP. Me gustaria reservar",
+    "PRECO": "Vive la mejor experiencia de tu vida por menos de $2,500"
+  },
+  "PRICING": {
+    "SALA_VIP": "Sala VIP",
+    "TEMPO_VOO": "60 minutos de vuelo",
+    "TRANSFER": "Traslado desde Jeep Commander",
+    "CHAMPAGNE": "Champán",
+    "FOTOGRAFIA": "Fotografía",
+    "GRAVACAO": "Grabando",
+    "BUQUE": "Ramo"
   }
 }
