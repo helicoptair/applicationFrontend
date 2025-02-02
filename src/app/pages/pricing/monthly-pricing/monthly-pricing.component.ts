@@ -19,7 +19,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class MonthlyPricingComponent {
   public items = [
-    { name: 'Outros Voos', champagne: '0', buque: '0', roteiro: '0', fotografia: '0', exclusivo: '0', gravacao: '0', transfer: '0' },
-    { name: 'Passeio VIP', champagne: '1', buque: '1', roteiro: '1', fotografia: '1', exclusivo: '1', gravacao: '1', transfer: '1' },
+    { name: 'Other flights', champagne: '0', buque: '0', roteiro: '0', fotografia: '0', exclusivo: '0', gravacao: '0', transfer: '0' },
+    { name: 'VIP Tour', champagne: '1', buque: '1', roteiro: '1', fotografia: '1', exclusivo: '1', gravacao: '1', transfer: '1' },
   ]
 }
