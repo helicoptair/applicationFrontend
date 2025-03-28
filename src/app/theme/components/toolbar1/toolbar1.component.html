@@ -10,15 +10,15 @@
     </div>
     <app-social-icons fxLayout="row" fxLayoutAlign="start center" fxShow="false" fxShow.gt-md></app-social-icons>
     <div fxLayout="row" fxLayoutAlign="end center" class="">
-      <app-blog></app-blog>
+      <!-- <app-blog></app-blog> -->
       <!-- <app-currency></app-currency> -->
-      @if (!userLogado){
+      <!-- @if (!userLogado){
         <app-acesso></app-acesso>
-      }
+      } -->
       <app-lang></app-lang>
-      @if (userLogado){
+      <!-- @if (userLogado){
         <app-user-menu></app-user-menu>
-      }
+      } -->
     </div>    
   </div>           
 </mat-toolbar>  
@@ -56,12 +56,12 @@
         <button mat-raised-button color="success" class="uppercase mx-1">Register</button>
       </div>   -->
       
-     @if(!isLuxury){
+     <!-- @if(!isLuxury){
        @if(!userLogado){
          <a routerLink="/login" mat-raised-button color="primary" fxShow="false" fxShow.gt-xs class="uppercase">{{ 'LOGIN' | translate }}</a>
          <a routerLink="/register" mat-raised-button color="success" fxShow="false" fxShow.gt-xs class="uppercase" style="margin-left: 10px;">{{ 'REGISTER' | translate }}</a>
        }@else {<a (click)="logout()" mat-raised-button color="warn" fxShow="false" fxShow.gt-xs class="uppercase">{{ 'LOGOUT' | translate }}</a>}
-     }
+     } -->
 
     </div>   
   </div>     

@@ -66,34 +66,9 @@
                             <p style="text-align: justify;">{{ 'WIDGET_VOO_1' | translate }}</p>
                             <p style="font-size: 12px; text-align: justify;">{{ 'WIDGET_VOO_2' | translate }}</p>
                             <p style="font-size: 12px; text-align: justify;">{{ 'WIDGET_VOO_3' | translate }}</p>
-                            @if(userLogado){
-                                <div class="text-center">
-
-                                    <form [formGroup]="dateForm"> 
-                                        <mat-form-field>
-                                            <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="datepickerRef" formControlName="date" required readonly (dateChange)="valueChanged($event)"/>
-                                            <mat-datepicker-toggle [for]="datepickerRef" matSuffix></mat-datepicker-toggle>
-                                            <mat-datepicker #datepickerRef></mat-datepicker>
-                                            @if (dateForm.controls.date.errors?.required) {
-                                                <mat-error>Campo obrigatório</mat-error>
-                                            }  
-                                        </mat-form-field>
-                                    </form>
-
-                                    @if(dataEscolhidaToogle){
-                                        <button mat-raised-button [ngStyle]="{'background-color':'#3EA201'}" style="color: white; margin-top: 10px;" (click)="abrirCheckout()">Reservar</button>
-                                    }@else{
-                                        <button mat-raised-button [ngStyle]="{'background-color':'#3EA201'}" style="color: white; margin-top: 10px;" disabled>Escolha data para reservar</button>
-                                    }
-                                </div>
-                            }@else{
-                                <div class="text-center">
-                                    <button mat-raised-button [ngStyle]="{'background-color':'#3EA201'}" style="color: white;" [routerLink]="['/login']">{{ 'FAZER_LOGIN_PRA_RESERVAR' | translate }}</button>
-                                </div>
-                                <div class="text-center" style="margin-top: 20px;">
-                                    <a mat-flat-button href="https://api.whatsapp.com/send?phone=5521995585986&text=Ol%C3%A1,%20vim%20do%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!%0A%0AHello,%20I%20came%20from%20your%20website%20and%20would%20like%20more%20information!%0A%0AHola,%20vengo%20de%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n." [ngStyle]="{'background-color':'#3EA201', 'color':'white'}" target="_blank" class="mx-3 uppercase">{{ 'RESERVAR_PELO_ZAP' | translate }}</a>
-                                </div>
-                            }
+                            <div class="text-center" style="margin-top: 20px;">
+                                <a mat-flat-button href="https://api.whatsapp.com/send?phone=5521995585986&text=Ol%C3%A1,%20vim%20do%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!%0A%0AHello,%20I%20came%20from%20your%20website%20and%20would%20like%20more%20information!%0A%0AHola,%20vengo%20de%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n." [ngStyle]="{'background-color':'#3EA201', 'color':'white'}" target="_blank" class="mx-3 uppercase">{{ 'RESERVAR_PELO_ZAP' | translate }}</a>
+                            </div>
                         </div>
 
                         <!-- ENVIE SUA DUVIDA -->
@@ -273,7 +248,7 @@
 
                     <mat-card class="mt-3">
                         <div fxFlex="100" fxFlex.gt-xs="100" fxLayout="row" class="item">
-                            <img src="{{imagens}}{{voo.imagem_grande}}" width="100%"/>
+                            <img src="images/capas_voos/{{voo.imagem_grande}}" width="100%"/>
                         </div> 
                     </mat-card>
 

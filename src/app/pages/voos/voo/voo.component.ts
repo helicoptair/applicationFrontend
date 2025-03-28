@@ -230,7 +230,7 @@ export class VooComponent implements OnInit {
   }
 
   public getVooByUrl(url: string) {
-    this.voosService.obterVooPelaUrl(url).subscribe(data => {
+    this.voosService.getFlightByUrlJson(url).subscribe(data => {
       this.voo = data;
       console.log("VOO: "+this.voo);
       // this.embedVideo = this.embedService.embed(this.voo.videos[1].link);

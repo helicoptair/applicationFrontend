@@ -1,0 +1,17 @@
+{
+    "id": 26,
+    "tempo_de_voo_minutos": 45, 
+    "quantidade_pax": 5,
+    "tipo_de_voo": 2,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 6200.00,
+    "preco_pix_pessoa": 1240.00,
+    "preco_cartao_total": 6700.00,
+    "preco_cartao_pessoa": 1340.00,
+    "imagem_grande": "Panoramico_45min_5pax_lg.png",
+    "imagem_media": "Panoramico_45min_4pax_md.png",
+    "imagem_pequena": "Panoramico_45min_5pax_sm.png",
+    "titulo": "Panorâmico - 45min - 5 pax",
+    "status": "Normal",
+    "url_voo": "voo_panoramico_5pax_45min"
+}

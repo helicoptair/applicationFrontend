@@ -1,0 +1,17 @@
+{
+    "id": 14,
+    "tempo_de_voo_minutos": 30, 
+    "quantidade_pax": 2,
+    "tipo_de_voo": 3,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 2450.00,
+    "preco_pix_pessoa": 1225.00,
+    "preco_cartao_total": 2650.00,
+    "preco_cartao_pessoa": 1325.00,
+    "imagem_grande": "Panoramico_30min_2pax_lg.png",
+    "imagem_media": "Panoramico_30min_2pax_md.png",
+    "imagem_pequena": "Panoramico_30min_2pax_sm.png",
+    "titulo": "Panorâmico - 30min - 2 pax",
+    "status": "Foto ou Vídeo",
+    "url_voo": "voo_panoramico_2pax_30min_foto_ou_video"
+}

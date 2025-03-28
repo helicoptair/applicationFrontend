@@ -1,0 +1,17 @@
+{
+    "id": 12,
+    "tempo_de_voo_minutos": 30, 
+    "quantidade_pax": 2,
+    "tipo_de_voo": 1,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 1900.00,
+    "preco_pix_pessoa": 950.00,
+    "preco_cartao_total": 2100.00,
+    "preco_cartao_pessoa": 1050.00,
+    "imagem_grande": "Panoramico_30min_2pax_lg.png",
+    "imagem_media": "Panoramico_30min_2pax_md.png",
+    "imagem_pequena": "Panoramico_30min_2pax_sm.png",
+    "titulo": "Panorâmico - 30min - 2 pax",
+    "status": "Compartilhado",
+    "url_voo": "voo_panoramico_2pax_30min_compartilhado"
+}

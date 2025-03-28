@@ -1,0 +1,17 @@
+{
+    "id": 24,
+    "tempo_de_voo_minutos": 45, 
+    "quantidade_pax": 3,
+    "tipo_de_voo": 2,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 3150.00,
+    "preco_pix_pessoa": 1050.00,
+    "preco_cartao_total": 3450.00,
+    "preco_cartao_pessoa": 1150.00,
+    "imagem_grande": "Panoramico_45min_3pax_lg.png",
+    "imagem_media": "Panoramico_45min_3pax_md.png",
+    "imagem_pequena": "Panoramico_45min_3pax_sm.png",
+    "titulo": "Panorâmico - 45min - 3 pax",
+    "status": "Promo",
+    "url_voo": "voo_panoramico_3pax_45min"
+}

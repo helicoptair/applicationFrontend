@@ -1,0 +1,17 @@
+{
+    "id": 25,
+    "tempo_de_voo_minutos": 45, 
+    "quantidade_pax": 4,
+    "tipo_de_voo": 2,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 4300.00,
+    "preco_pix_pessoa": 1075.00,
+    "preco_cartao_total": 4700.00,
+    "preco_cartao_pessoa": 1175.00,
+    "imagem_grande": "Panoramico_45min_4pax_lg.png",
+    "imagem_media": "Panoramico_45min_4pax_md.png",
+    "imagem_pequena": "Panoramico_45min_4pax_sm.png",
+    "titulo": "Panorâmico - 45min - 4 pax",
+    "status": "Promo",
+    "url_voo": "voo_panoramico_4pax_45min"
+}

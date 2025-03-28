@@ -1,0 +1,17 @@
+{
+    "id": 6,
+    "tempo_de_voo_minutos": 30, 
+    "quantidade_pax": 3,
+    "tipo_de_voo": 5,
+    "categoria_de_voo": 3,
+    "preco_pix_total": 4947.00,
+    "preco_pix_pessoa": 1649.00,
+    "preco_cartao_total": 5247.00,
+    "preco_cartao_pessoa": 1749.00,
+    "imagem_grande": "Panoramico_doorsoff_3pax_lg.png",
+    "imagem_media": "Panoramico_doorsoff_3pax_md.png",
+    "imagem_pequena": "Panoramico_doorsoff_3pax_sm.png",
+    "titulo": "Doors-off - 3 pax",
+    "status": "Exclusivo",
+    "url_voo": "voo_panoramico_doorsoff_3pax"
+}

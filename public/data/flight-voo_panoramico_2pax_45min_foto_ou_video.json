@@ -1,0 +1,17 @@
+{
+    "id": 22,
+    "tempo_de_voo_minutos": 45, 
+    "quantidade_pax": 2,
+    "tipo_de_voo": 3,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 3550.00,
+    "preco_pix_pessoa": 1775.00,
+    "preco_cartao_total": 3750.00,
+    "preco_cartao_pessoa": 1875.00,
+    "imagem_grande": "Panoramico_45min_2pax_lg.png",
+    "imagem_media": "Panoramico_45min_2pax_md.png",
+    "imagem_pequena": "Panoramico_45min_2pax_sm.png",
+    "titulo": "Panorâmico - 45min - 2 pax",
+    "status": "Foto ou Vídeo",
+    "url_voo": "voo_panoramico_2pax_45min_foto_ou_video"
+}

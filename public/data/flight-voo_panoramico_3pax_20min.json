@@ -1,0 +1,17 @@
+{
+    "id": 9,
+    "tempo_de_voo_minutos": 20, 
+    "quantidade_pax": 3,
+    "tipo_de_voo": 2,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 1920.00,
+    "preco_pix_pessoa": 640.00,
+    "preco_cartao_total": 2220.00,
+    "preco_cartao_pessoa": 740.00,
+    "imagem_grande": "Panoramico_20min_3pax_lg.png",
+    "imagem_media": "Panoramico_20min_3pax_md.png",
+    "imagem_pequena": "Panoramico_20min_3pax_sm.png",
+    "titulo": "Panorâmico - 20min - 3 pax",
+    "status": "Promo",
+    "url_voo": "voo_panoramico_3pax_20min"
+}

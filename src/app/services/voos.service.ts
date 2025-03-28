@@ -7,6 +7,7 @@ import { CreateSession } from '@models/create_session';
 import { Reservas } from '@models/reservas';
 import { BaseService } from './base.service';
 import { Duvidas } from '@models/duvidas';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -16,6 +17,7 @@ export class VoosService extends BaseService {
   constructor(private http: HttpClient) {
     super();
   }
+  public url = environment.url + '/data/';
 
   obterVoosHomepage(): Observable<Voos[]> {
     return this.http
@@ -26,6 +28,10 @@ export class VoosService extends BaseService {
         catchError(this.handleError)
       );
   }
+
+  public getVoosFrontend(): Observable<Voos[]> {
+      return this.http.get<Voos[]>(this.url + 'flights.json');
+    }
 
   obterVooPeloId(id: string): Observable<Voos> {
     return this.http
@@ -43,6 +49,10 @@ export class VoosService extends BaseService {
         tap(data => console.log('Dados recebidos (VooPelaUrl):', data)),
         catchError(this.handleError)
       );
+  }
+
+  public getFlightByUrlJson(url: string): Observable<Voos> {
+    return this.http.get<Voos>(this.url + 'flight-' + url + '.json');
   }
 
   testeCheckout(session: CreateSession): Observable<any> {

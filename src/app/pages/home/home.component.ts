@@ -248,7 +248,7 @@ export class HomeComponent implements OnInit {
 
   // EU FAZENDO
   public obterVoosHomepage() {
-    this.voosService.obterVoosHomepage().subscribe(data => {
+    this.voosService.getVoosFrontend().subscribe(data => {
       if (this.voos && this.voos.length > 0) {
         this.settings.loadMore.page++;
         this.pagination.page = this.settings.loadMore.page;

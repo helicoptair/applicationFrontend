@@ -1,0 +1,17 @@
+{
+    "id": 4,
+    "tempo_de_voo_minutos": 30, 
+    "quantidade_pax": 1,
+    "tipo_de_voo": 5,
+    "categoria_de_voo": 3,
+    "preco_pix_total": 1649.00,
+    "preco_pix_pessoa": 1649.00,
+    "preco_cartao_total": 1749.00,
+    "preco_cartao_pessoa": 1749.00,
+    "imagem_grande": "Panoramico_doorsoff_1pax_lg.png",
+    "imagem_media": "Panoramico_doorsoff_1pax_md.png",
+    "imagem_pequena": "Panoramico_doorsoff_1pax_sm.png",
+    "titulo": "Doors-off - 1 pax",
+    "status": "Compartilhado",
+    "url_voo": "voo_panoramico_doorsoff_1pax"
+}

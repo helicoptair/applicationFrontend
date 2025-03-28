@@ -1,0 +1,17 @@
+{
+    "id": 17,
+    "tempo_de_voo_minutos": 30, 
+    "quantidade_pax": 4,
+    "tipo_de_voo": 2,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 2960.00,
+    "preco_pix_pessoa": 740.00,
+    "preco_cartao_total": 3360.00,
+    "preco_cartao_pessoa": 840.00,
+    "imagem_grande": "Panoramico_30min_4pax_lg.png",
+    "imagem_media": "Panoramico_30min_4pax_md.png",
+    "imagem_pequena": "Panoramico_30min_4pax_sm.png",
+    "titulo": "Panorâmico - 30min - 4 pax",
+    "status": "Promo",
+    "url_voo": "voo_panoramico_4pax_30min"
+}

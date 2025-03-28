@@ -1,0 +1,17 @@
+{
+    "id": 1,
+    "tempo_de_voo_minutos": 20, 
+    "quantidade_pax": 1,
+    "tipo_de_voo": 1,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 795.00,
+    "preco_pix_pessoa": 795.00,
+    "preco_cartao_total": 895.00,
+    "preco_cartao_pessoa": 895.00,
+    "imagem_grande": "Panoramico_20min_1pax_lg.png",
+    "imagem_media": "Panoramico_20min_1pax_md.png",
+    "imagem_pequena": "Panoramico_20min_1pax_sm.png",
+    "titulo": "Panorâmico - 20min - 1 pax",
+    "status": "Compartilhado",
+    "url_voo": "voo_panoramico_1pax_20min_compartilhado"
+}

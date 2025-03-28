@@ -1,0 +1,17 @@
+{
+    "id": 18,
+    "tempo_de_voo_minutos": 30, 
+    "quantidade_pax": 5,
+    "tipo_de_voo": 2,
+    "categoria_de_voo": 1,
+    "preco_pix_total": 4290.00,
+    "preco_pix_pessoa": 858.00,
+    "preco_cartao_total": 4790.00,
+    "preco_cartao_pessoa": 958.00,
+    "imagem_grande": "Panoramico_30min_5pax_lg.png",
+    "imagem_media": "Panoramico_30min_5pax_md.png",
+    "imagem_pequena": "Panoramico_30min_5pax_sm.png",
+    "titulo": "Panorâmico - 30min - 5 pax",
+    "status": "Normal",
+    "url_voo": "voo_panoramico_5pax_30min"
+}
